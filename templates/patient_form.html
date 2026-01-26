@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+
+{% if error %}
+<div class="alert alert-danger">{{ error }}</div>
+{% endif %}
+
+<form method="post">
+
+<label>Name</label>
+<input class="form-control" name="name">
+
+<label>Age</label>
+<input class="form-control" name="age">
+
+<label>Phone</label>
+<input class="form-control" name="phone">
+
+<button class="btn btn-success mt-3">Confirm Booking</button>
+</form>
+
+{% endblock %}

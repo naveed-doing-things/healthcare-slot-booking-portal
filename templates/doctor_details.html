@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h4>{{ doctor.name }}</h4>
+<p>{{ doctor.specialization }}</p>
+<p>Available: {{ doctor.availability.start }} to {{ doctor.availability.end }}</p>
+
+<h5>Select Slot</h5>
+
+{% for s in slots %}
+<a href="/book?slot={{ s }}" class="btn btn-outline-success m-1">{{ s }}</a>
+{% endfor %}
+
+{% endblock %}

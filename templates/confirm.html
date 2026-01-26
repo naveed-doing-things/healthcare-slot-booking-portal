@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="alert alert-success">
+  Appointment Confirmed 🎉
+</div>
+
+<h4>Doctor: {{ doctor.name }}</h4>
+<p>Slot: {{ slot }}</p>
+
+<h4>Patient Details</h4>
+<p>Name: {{ patient.name }}</p>
+<p>Age: {{ patient.age }}</p>
+<p>Phone: {{ patient.phone }}</p>
+
+<a href="/" class="btn btn-primary mt-3">Book Another</a>
+
+{% endblock %}
